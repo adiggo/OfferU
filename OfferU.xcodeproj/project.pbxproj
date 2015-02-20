@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		296B073A1A95BC0B0000EEFC /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 296B07391A95BC0B0000EEFC /* Product.m */; };
 		45A7E9B31A89DF0E0002A76F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A7E9B21A89DF0E0002A76F /* main.m */; };
 		45A7E9B61A89DF0E0002A76F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A7E9B51A89DF0E0002A76F /* AppDelegate.m */; };
 		45A7E9B91A89DF0E0002A76F /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A7E9B81A89DF0E0002A76F /* MasterViewController.m */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		296B07381A95BC0B0000EEFC /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		296B07391A95BC0B0000EEFC /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
 		45A7E9AD1A89DF0E0002A76F /* OfferU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OfferU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45A7E9B11A89DF0E0002A76F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45A7E9B21A89DF0E0002A76F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -94,6 +97,8 @@
 				45A7E9C01A89DF0E0002A76F /* Images.xcassets */,
 				45A7E9C21A89DF0E0002A76F /* LaunchScreen.xib */,
 				45A7E9B01A89DF0E0002A76F /* Supporting Files */,
+				296B07381A95BC0B0000EEFC /* Product.h */,
+				296B07391A95BC0B0000EEFC /* Product.m */,
 			);
 			path = OfferU;
 			sourceTree = "<group>";
@@ -225,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45A7E9B61A89DF0E0002A76F /* AppDelegate.m in Sources */,
+				296B073A1A95BC0B0000EEFC /* Product.m in Sources */,
 				45A7E9B91A89DF0E0002A76F /* MasterViewController.m in Sources */,
 				45A7E9B31A89DF0E0002A76F /* main.m in Sources */,
 				45A7E9BC1A89DF0E0002A76F /* DetailViewController.m in Sources */,
@@ -418,6 +424,7 @@
 				45A7E9D51A89DF0F0002A76F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		45A7E9D61A89DF0F0002A76F /* Build configuration list for PBXNativeTarget "OfferUTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +433,7 @@
 				45A7E9D81A89DF0F0002A76F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -76,6 +76,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="V3V-5U-rw9" id="e2u-lL-LbU"/>
+                        <outlet property="searchbar" destination="mLL-gJ-YKr" id="Py9-lb-kyB"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Cn-md-YlS" sceneMemberID="firstResponder"/>
