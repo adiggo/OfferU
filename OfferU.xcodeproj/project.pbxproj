@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		291621CB1A97051700647F70 /* basketball.png in Resources */ = {isa = PBXBuildFile; fileRef = 291621CA1A97051700647F70 /* basketball.png */; };
+		291621CE1A970A7800647F70 /* ProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 291621CD1A970A7800647F70 /* ProductCell.m */; };
 		296B073A1A95BC0B0000EEFC /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 296B07391A95BC0B0000EEFC /* Product.m */; };
 		45A7E9B31A89DF0E0002A76F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A7E9B21A89DF0E0002A76F /* main.m */; };
 		45A7E9B61A89DF0E0002A76F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A7E9B51A89DF0E0002A76F /* AppDelegate.m */; };
@@ -29,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		291621CA1A97051700647F70 /* basketball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = basketball.png; path = ../../../Downloads/basketball.png; sourceTree = "<group>"; };
+		291621CC1A970A7800647F70 /* ProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductCell.h; sourceTree = "<group>"; };
+		291621CD1A970A7800647F70 /* ProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductCell.m; sourceTree = "<group>"; };
 		296B07381A95BC0B0000EEFC /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
 		296B07391A95BC0B0000EEFC /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
 		45A7E9AD1A89DF0E0002A76F /* OfferU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OfferU.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +92,7 @@
 		45A7E9AF1A89DF0E0002A76F /* OfferU */ = {
 			isa = PBXGroup;
 			children = (
+				291621CA1A97051700647F70 /* basketball.png */,
 				45A7E9B41A89DF0E0002A76F /* AppDelegate.h */,
 				45A7E9B51A89DF0E0002A76F /* AppDelegate.m */,
 				45A7E9B71A89DF0E0002A76F /* MasterViewController.h */,
@@ -99,6 +105,8 @@
 				45A7E9B01A89DF0E0002A76F /* Supporting Files */,
 				296B07381A95BC0B0000EEFC /* Product.h */,
 				296B07391A95BC0B0000EEFC /* Product.m */,
+				291621CC1A970A7800647F70 /* ProductCell.h */,
+				291621CD1A970A7800647F70 /* ProductCell.m */,
 			);
 			path = OfferU;
 			sourceTree = "<group>";
@@ -211,6 +219,7 @@
 			files = (
 				45A7E9BF1A89DF0E0002A76F /* Main.storyboard in Resources */,
 				45A7E9C41A89DF0E0002A76F /* LaunchScreen.xib in Resources */,
+				291621CB1A97051700647F70 /* basketball.png in Resources */,
 				45A7E9C11A89DF0E0002A76F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,6 +243,7 @@
 				45A7E9B91A89DF0E0002A76F /* MasterViewController.m in Sources */,
 				45A7E9B31A89DF0E0002A76F /* main.m in Sources */,
 				45A7E9BC1A89DF0E0002A76F /* DetailViewController.m in Sources */,
+				291621CE1A970A7800647F70 /* ProductCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

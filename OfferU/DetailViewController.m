@@ -34,8 +34,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     [self configureView];
+    self.title = self.product.name;
+    self.productImageView.image = [UIImage imageNamed:self.product.image];
+    self.productDescription.text = @"basketball";
+    // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 - (void)didReceiveMemoryWarning {

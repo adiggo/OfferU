@@ -12,5 +12,6 @@
 
 @property NSString* name;
 @property NSString* des;
+@property (nonatomic, strong) NSString *image; // image filename of prodcut
 @end
 

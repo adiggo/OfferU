@@ -29,7 +29,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     Product *product1 = [[Product alloc] init];
-    product1.name = @"basketabll";
+    product1.name = @"basketball";
+    product1.image = @"basketball.png";
     _objects = [NSArray arrayWithObjects:product1, nil];
     // Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
@@ -76,14 +77,33 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
-    Product *object = self.objects[indexPath.row];
-    cell.textLabel.text = object.name;
+    Product *product = [_objects objectAtIndex:indexPath.row];
+    cell.textLabel.text = product.name;
     return cell;
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return NO if you do not want the specified item to be editable.
     return YES;
+}
+
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:@"showProduct"]){
+        NSIndexPath *indexPath = nil;
+        Product *product = nil;
+//        if (self.searchDisplayController.active){
+//            indexPath = [self.searchDisplayController.searchResultsTableView indexPathForSelectedRow];
+//            product = [_searchResult objectAtIndex:indexPath.row];
+//        }else{
+            indexPath = [self.tableView indexPathForSelectedRow];
+        NSLog(@"the row is %d", indexPath.row);
+            product = [_objects objectAtIndex:indexPath.row];
+//        }
+        
+        DetailViewController *productView = segue.destinationViewController;
+        productView.product = product;
+    }
 }
 
 //- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
