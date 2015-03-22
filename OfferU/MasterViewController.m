@@ -34,18 +34,18 @@
     _objects = [NSArray arrayWithObjects:product1, nil];
     // Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
-    //add tap gesture for this viewcontroller. and dismiss keyboard for this tap.
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
-                                   initWithTarget:self action:@selector(dismissKeyboard)];
+//    //add tap gesture for this viewcontroller. and dismiss keyboard for this tap.
+//    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+//                                   initWithTarget:self action:@selector(dismissKeyboard)];
     
-    [self.view addGestureRecognizer:tap];
+//    [self.view addGestureRecognizer:tap];
 }
 
-// dismiss keyboard when tap
-- (void)dismissKeyboard
-{
-    [self.searchbar resignFirstResponder];
-}
+//// dismiss keyboard when tap
+//- (void)dismissKeyboard
+//{
+//    [self.searchbar resignFirstResponder];
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -54,6 +54,11 @@
 
 
 
+
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    [self performSegueWithIdentifier:@"showProduct" sender:tableView];
+//}
 
 
 #pragma mark - Table View
@@ -88,6 +93,9 @@
 }
 
 
+/*
+ * this is a method to check in the running time
+ */
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if ([segue.identifier isEqualToString:@"showProduct"]){
         NSIndexPath *indexPath = nil;
@@ -97,7 +105,7 @@
 //            product = [_searchResult objectAtIndex:indexPath.row];
 //        }else{
             indexPath = [self.tableView indexPathForSelectedRow];
-        NSLog(@"the row is %d", indexPath.row);
+            NSLog(@"the row is %d", indexPath.row);
             product = [_objects objectAtIndex:indexPath.row];
 //        }
         
